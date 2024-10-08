@@ -1,0 +1,162 @@
+body {
+    font-family: 'Poppins', sans-serif; /* เปลี่ยนฟอนต์เป็น Poppins */
+    background-image: url('pic/bg.gif'); /* กำหนดรูปพื้นหลัง */
+    background-size: cover; /* ปรับขนาดรูปพื้นหลังให้เต็มหน้าจอ */
+    background-repeat: no-repeat; /* ไม่ให้รูปพื้นหลังซ้ำ */
+    background-position: center center; /* จัดตำแหน่งรูปพื้นหลังให้อยู่กึ่งกลาง */
+    background-attachment: fixed; /* ให้พื้นหลังไม่เลื่อนตามการเลื่อนของหน้า */
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #520513;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #daa158;
+    
+}
+
+.profile-section {
+    margin-bottom: 15px;
+}
+
+.profile-section label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #daa158;
+    margin-bottom: 20px;
+}
+
+.profile-section p {
+    font-family: 'Poppins', sans-serif;
+    color: #daa158;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    border: 5px solid #330505; /* เพิ่มกรอบสีเทา */
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+/* สไตล์สำหรับปุ่มลิงก์ */
+.button-group {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.button-port {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #daa158;
+    color: #4d3434;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        width: 80%;
+    }
+
+    .profile-header h1 {
+        font-size: 20px;
+    }
+    
+}
+
+.video-shadow {
+    margin-top: 20px;
+    border: 5px solid #330505; /* เพิ่มกรอบสีเทา */
+    box-shadow: 0 10px 8px rgb(0, 0, 0);
+    border-radius: 50px; /* เพิ่มความโค้งมนให้กับมุมของวิดีโอ */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px; /* ขนาดไอคอน */
+    height: 40px; /* ขนาดไอคอน */
+    margin: 0 15px; /* เพิ่มระยะห่างระหว่างไอคอน (เปลี่ยนจาก 10px เป็น 15px) */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* ขยายไอคอนเมื่อเอาเมาส์ชี้ */
+}
+
+.block {
+    background-color: #520513; /* สีพื้นหลัง */
+    border: 1px solid #daa158;    /* กรอบ */
+    padding: 15px;             /* ช่องว่างภายในบล็อก */
+    margin-bottom: 20px;       /* ช่องว่างระหว่างบล็อก */
+    border-radius: 10px;       /* มุมมนของบล็อก */
+}
+
+.block2 {
+    background-color: #520513; /* สีพื้นหลัง */
+    border: 1px solid #daa158; /* กรอบ */
+    padding: 15px; /* ช่องว่างภายในบล็อก */
+    margin: 20px auto; /* ช่องว่างรอบบล็อก, ตั้งค่า auto ให้บล็อกอยู่ตรงกลาง */
+    border-radius: 10px; /* มุมมนของบล็อก */
+    width: 50%; /* กำหนดความกว้างของบล็อกให้ไม่ยืดเต็มหน้าจอ */
+    max-width: 600px; /* กำหนดความกว้างสูงสุดเพื่อให้ไม่กว้างเกินไป */
+}
+
+.text-block {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;             /* Space around the text */
+    margin: 20px 0;            /* Margin between other elements */
+    border: 5px solid #330505; /* เพิ่มกรอบสีเทา */
+    box-shadow: 0 10px 8px rgb(0, 0, 0);
+    border-radius: 50px; /* เพิ่มความโค้งมนให้กับมุมของวิดีโอ */
+    max-width: 100%;            /* Optional: full width of container */
+}
+
+.text-block p {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    margin: 5px 0;
+}
